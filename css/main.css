@@ -4,9 +4,41 @@ body {
     height: auto;
     margin: 0 auto;
 }
+
+#logo {
+    max-height: 80px;
+    margin-left: 10px;
+}
+
+.btn_azul {
+    background-color: white;
+    color: #65cfcf;
+    border: solid 2px #65cfcf;
+    font-size: large;
+}
+
+.btn_azul:hover {
+    background-color: #65cfcf;
+    border: solid 2px #65cfcf;
+    color: white;
+}
+
+.btn_amarelo {
+    background-color: white;
+    color: #65cfcf;
+    border: solid 2px #65cfcf;
+    font-size: large;
+}
+
+.btn_amarelo:hover {
+    background-color: #65cfcf;
+    border: solid 2px #65cfcf;
+    color: white;
+}
 /* Homepage */
-nav {
+nav.navbar {
     background-color: rgb(3, 190, 128);
+    padding: 0;
 }
 
 nav>div>ul>li>a {
@@ -47,6 +79,11 @@ section.home:last-of-type {
 
 a {
     clear: both;
+}
+
+div.card>img {
+    height: 14rem;
+    object-fit: cover;
 }
 
 #card_container {
@@ -104,7 +141,7 @@ body.login {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: rgb(252, 252, 252);
+    background-image: url("../img/patas_wallpaper.jpg");
 }
 
 main.login {
@@ -136,17 +173,8 @@ form>div:last-of-type {
     text-align: center;
 }
 
-.btn_login {
-    background-color: white;
-    color: #65cfcf;
-    border: solid 2px #65cfcf;
-    font-size: large;
+form>div>button.btn_azul {
     padding: 6px;
     margin: 15px;
     width: 50%;
-}
-
-.btn_login:hover {
-    background-color: #65cfcf;
-    color: white;
 }
