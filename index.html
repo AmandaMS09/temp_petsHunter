@@ -32,7 +32,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md">
+    <!-- Cabeçalho -->
+    <nav class="navbar navbar-expand-md sticky-top">
         <img src="img/logo.png" alt="logo" id="logo" class="navbar-brand">
         <button class="navbar-toggler btn btn-outline-light my-2 my-sm-0" type="button" data-toggle="collapse" data-target="#navegacao" aria-controls="navegacao" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-list"></i>
@@ -50,13 +51,17 @@
                     <a class="nav-link" href="pets_encontrados.html" id="encontrados">Pets Encontrados</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#rodape" id="contatos">Contato</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="login.html" id="login">Login</a>
                 </li>
             </ul>
         </div>
     </nav>
     <header></header>
-    <main>
+    <!-- Destaques -->
+    <main class="home">
         <!-- Cadastro de animais -->
         <section class="home">
             <button type="button" class="btn_amarelo btn cad_btn btn-outline-warning">Cadastrar desaparecimento</button>
@@ -65,64 +70,250 @@
         <!-- Pets desaparecidos -->
         <section class="home">
             <div id="card_container">
-                <!-- CARD 1 -->
-                <div class="card card_1 p_card1" style="width: 15rem;">
+                <!-- CARD 1.1 -->
+                <div class="card card_1 p_card1" data-toggle="modal" data-target="#modal1">
                     <img src="img/pet1.jpeg" alt="perdido1">
                     <div class="container">
-                      <p>Cachorro SRD perdido no Bairro Grajaú</p>
-                      <p>12/05/2022</p>
+                      <p>Cachorro SRD perdido no Bairro Santo Antônio</p>
+                      <p>20/05/2022</p>
                     </div>
                 </div>
-                <!-- CARD 2 -->
-                <div class="card card_2 p_card2" style="width: 15rem">
+                    <!-- MODAL 1.1 -->
+                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1_titulo" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal1_titulo">Bairro Santo Antônio</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/pet1.jpeg" alt="perdido1">
+                                    <div class="modal_texto">
+                                        <p>Cachorro fêmea - SRD - 3 anos</p>
+                                        <p>Belinha foi perdida no bairro Santo Antônio, com um lacinho na cabeça. Fugiu pelo portão aberto no dia 20/05/2022.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <p>Contato: (31) 99999-9999</p>
+                                    <p><small>Desaparecido em 20/05/2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- CARD 2.1 -->
+                <div class="card card_2 p_card2" data-toggle="modal" data-target="#modal2">
                     <img src="img/pet2.jpeg" alt="perdido2">
                     <div class="container">
-                      <p>Cachorro SRD perdido no Bairro Grajaú</p>
+                      <p>Gato perdido no Bairro Grajaú</p>
                       <p>12/05/2022</p>
                     </div>
                 </div>
-                <!-- CARD 3 -->
-                <div class="card card_3 p_card3" style="width: 15rem">
+                    <!-- MODAL 2.1 -->
+                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2_titulo" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal2_titulo">Bairro Grajaú</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/pet2.jpeg" alt="perdido2">
+                                    <div class="modal_texto">
+                                        <p>Gato fêmea - SRD - 4 anos</p>
+                                        <p>Nina foi perdida no bairro Grajaú. Saiu do prédio no dia e não voltou ainda.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <p>Contato: (31) 99999-9999</p>
+                                    <p><small>Desaparecido em 12/05/2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- CARD 3.1 -->
+                <div class="card card_3 p_card3" data-toggle="modal" data-target="#modal3">
                     <img src="img/pet3.jpeg" alt="perdido3">
                     <div class="container">
-                      <p>Cachorro SRD perdido no Bairro Grajaú</p>
-                      <p>12/05/2022</p>
+                      <p>Cachorro SRD perdido no Bairro Nova Suiça</p>
+                      <p>22/05/2022</p>
                     </div>
                 </div>
+                    <!-- MODAL 3.1 -->
+                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3_titulo" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal3_titulo">Bairro Nova Suiça</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/pet3.jpeg" alt="perdido3">
+                                    <div class="modal_texto">
+                                        <p>Cachorro fêmea - SRD - 2,5 anos</p>
+                                        <p>Mel foi perdida no bairro Nova Suiça no dia 22/05/2022. É de pequeno porte, branquinha e agitada.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <p>Contato: (31) 99999-9999</p>
+                                    <p><small>Desaparecido em 22/05/2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
             <a href="pets_perdidos.html" class="btn float-right mais_btn"><i class="bi bi-plus-lg"></i>Pets encontrados</a>
         </section>
         <!-- Pets encontrados -->
         <section class="home">
             <div id="card_container">
-                <!-- CARD 1 -->
-                <div class="card card_1 e_card1" style="width: 15rem">
-                    <img src="img/logo.png" alt="encontrado1">
+                <!-- CARD 1.2 -->
+                <div class="card card_1 e_card1" data-toggle="modal" data-target="#modal4">
+                    <img src="img/pet4.jpg" alt="encontrado1">
                     <div class="container">
-                    <p>Cachorro SRD perdido no Bairro Grajaú</p>
-                    <p>12/05/2022</p>
+                    <p>Cachorro SRD encontrado no bairro Jardim América</p>
+                    <p>15/05/2022</p>
                     </div>
                 </div>
-                <!-- CARD 2 -->
-                <div class="card card_2 e_card2" style="width: 15rem">
-                    <img src="img/logo.png" alt="encontrado2">
+                    <!-- MODAL 1.2 -->
+                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4_titulo" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal4_titulo">Bairro Jardim América</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/pet4.jpg" alt="encontrado1">
+                                    <div class="modal_texto">
+                                        <p>Cachorro fêmea - SRD - Grande porte</p>
+                                        <p>Encontrada no bairro Jardim América dentro de um lote abandonado.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <p>Contato: (31) 99999-9999</p>
+                                    <p><small>Encontrado em 15/05/2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- CARD 2.2 -->
+                <div class="card card_2 e_card2" data-toggle="modal" data-target="#modal5">
+                    <img src="img/pet5.jpg" alt="encontrado2">
                     <div class="container">
-                    <p>Cachorro SRD perdido no Bairro Grajaú</p>
-                    <p>12/05/2022</p>
+                        <p>Cachorro SRD encontrado no bairro Buritis</p>
+                    <p>18/05/2022</p>
                     </div>
                 </div>
+                    <!-- MODAL 2.2 -->
+                    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5_titulo" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal5_titulo">Bairro Buritis</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/pet5.jpg" alt="encontrado2">
+                                    <div class="modal_texto">
+                                        <p>Cachorro fêmea - SRD - Grande porte</p>
+                                        <p>Encontrada no bairro Burutis, bem cuidada.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <p>Contato: (31) 99999-9999</p>
+                                    <p><small>Encontrado em 18/05/2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <!-- CARD 3 -->
-                <div class="card card_3 e_card3" style="width: 15rem">
-                    <img src="img/logo.png" alt="encontrado3">
+                <div class="card card_3 e_card3" data-toggle="modal" data-target="#modal6">
+                    <img src="img/pet6.png" alt="encontrado3">
                     <div class="container">
-                    <p>Cachorro SRD perdido no Bairro Grajaú</p>
-                    <p>12/05/2022</p>
+                    <p>Cachorro SRD encontrado no bairro Salgado Filho</p>
+                    <p>21/05/2022</p>
                     </div>
                 </div>
+                    <!-- MODAL 3.2 -->
+                    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6_titulo" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal6_titulo">Bairro Salgado Filho</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/pet6.png" alt="encontrado3">
+                                    <div class="modal_texto">
+                                        <p>Cachorro fêmea - SRD - Grande porte</p>
+                                        <p>Encontrada no bairro Salgado Filho em 21/05/2022 com coleira e nome "Maya".</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <p>Contato: (31) 99999-9999</p>
+                                    <p><small>Encontrado em 21/05/2022</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
             <a href="pets_perdidos.html" class="btn float-right mais_btn"><i class="bi bi-plus-lg"></i>Pets perdidos</a>
         </section>
     </main>
-    <footer></footer>
+    <!-- Rodapé -->
+    <footer class="text-center text-lg-start bg-secondary text-white home" id="rodape">
+        <!-- Redes sociais -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Entre em contato ou veja nossas postagens:</span>
+            </div>
+            <div>
+                <a href="" class="m-3"><i class="bi bi-facebook"></i></a>
+                <a href="" class="m-3"><i class="bi bi-twitter"></i></a>
+                <a href="" class="m-3"><i class="bi bi-instagram"></i></a>
+                <a href="" class="m-3"><i class="bi bi-linkedin"></i></a>
+                <a href="" class="m-3"><i class="bi bi-github"></i></a>
+            </div>
+        </section>    
+        <!-- Sobre nós -->
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Pets Hunter</h6>
+                    <p>Desenvolvemos um site para divulgação de animais desaparecidos ou que foram encontrados na rua, com a finalidade de ajudar donos de pet que estão a procura de seus bichinhos.</p>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+                    <p>Belo Horizonte - Minas gerais, Brasil</p>
+                    <p>email@gmail.com</p>
+                    <p>Telefone +55 (31)99999-9999</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            <p>© 2022 Copyright: Pets Hunter</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 </body>
 </html>
