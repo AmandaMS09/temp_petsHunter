@@ -98,7 +98,7 @@ section.home:last-of-type {
     margin-right: 5px;
 }
 
-#card_container {
+.card_container {
     display: flex;
     width: 90%;
     margin: 0 auto;

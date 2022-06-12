@@ -1,0 +1,23 @@
+{
+  "name": "pets-hunter",
+  "version": "1.0.0",
+  "description": "Site de divulgação de animais desaparecidos e resgatados.\r Feito a partir das tecnologias: HTML, CSS e JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmandaMS09/temp_petsHunter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmandaMS09/temp_petsHunter/issues"
+  },
+  "homepage": "https://github.com/AmandaMS09/temp_petsHunter#readme",
+  "dependencies": {
+    "firebase": "^9.8.2"
+  }
+}
